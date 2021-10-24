@@ -13,7 +13,7 @@ html {
 }
 @media (max-width: 991px) {
   html {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -36,7 +36,7 @@ body, button, input, select, textarea {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.7;
-  color: #777777;
+  color: #777766;
 }
 
 pre,
@@ -52,8 +52,8 @@ textarea {
 }
 
 ::selection {
-  background: #000000;
-  color: #FFFFFF;
+  background: #000001;
+  color: #FFFFDF;
 }
 
 /*------------------------------
@@ -1213,5 +1213,5 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .has-very-dark-gray-background-color {
-  background-color: #444;
+  background-color: #445;
 }
