@@ -40,6 +40,9 @@ if ( get_theme_mod( 'onepress_hide_thumnail_if_not_exists', false ) ) {
 		<div class="entry-excerpt">
 			<?php
 				the_excerpt();
+				if ( has_post_thumbnail() is TRUE ) {
+					the_post_thumbnail( 'onepress-blog-small' );
+				} 
 			?>
 			<?php
 				wp_link_pages(

@@ -27,7 +27,7 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-    <?php if ( get_theme_mod( 'single_meta', 1 ) ) { ?>
+    <?php if ( get_theme_mod( 'single_meta', 2 ) ) { ?>
 
     <?php onepress_entry_footer(); ?>
 
