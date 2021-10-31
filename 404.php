@@ -38,7 +38,7 @@ get_header(); ?>
 										'orderby'    => 'count',
 										'order'      => 'DESC',
 										'show_count' => 1,
-										'title_li'   => '',
+										'title_li'   => 'page not found',
 										'number'     => 10,
 									) );
 								?>

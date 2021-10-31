@@ -45,11 +45,7 @@ if ( ! $hide_footer ) {
 					</div>
 				<?php endif; ?>
 				<?php
-				/**
-				 * hooked onepress_footer_site_info
-				 *
-				 * @see onepress_footer_site_info
-				 */
+	
 				do_action( 'onepress_footer_site_info' );
 				?>
 			</div>
@@ -59,11 +55,7 @@ if ( ! $hide_footer ) {
 	</footer><!-- #colophon -->
 	<?php
 }
-/**
- * Hooked: onepress_site_footer
- *
- * @see onepress_site_footer
- */
+
 do_action( 'onepress_site_end' );
 ?>
 </div><!-- #page -->
