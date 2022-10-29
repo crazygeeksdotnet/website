@@ -1,4 +1,3 @@
-import imp
 import json
 from flask import Flask, request, jsonify
 from demo import Wikipedia
@@ -26,3 +25,7 @@ def get_data_from_wikipedia():
         return jsonify(response)
     except Exception:
         raise("Getting error in finding result inside the wikipedia")
+
+# run the app
+if __name__ == '__main__':
+    app.run(debug=True)
