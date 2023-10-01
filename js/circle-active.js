@@ -63,6 +63,8 @@
 						if ($this.hasClass('circular')) {
 							inner.circleProgress({value: parseInt(percentage, 10) / 100});
 						};
+					}else{
+						alert("something want wrong.")
 					};
 				});
 			});
