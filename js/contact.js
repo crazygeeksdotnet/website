@@ -31,7 +31,11 @@ $(document).ready(function(){
                 message: {
                     required: true,
                     minlength: 20
-                }
+                },
+                address: {
+                    required: true,
+                    address: true
+                },
             },
             messages: {
                 name: {
@@ -52,7 +56,10 @@ $(document).ready(function(){
                 message: {
                     required: "um...yea, you have to write something to send this form.",
                     minlength: "thats all? really?"
-                }
+                },
+                address: {
+                    required: "Address is required to reach you.. kindly fill your address.",
+                },
             },
             submitHandler: function(form) {
                 $(form).ajaxSubmit({
