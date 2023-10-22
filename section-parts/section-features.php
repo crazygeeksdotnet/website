@@ -49,6 +49,10 @@ if ( !$disable && !empty( $data ) ) {
                     $f['icon'] = trim( $f['icon'] );
                     $media = '<span class="fa-stack fa-5x"><i class="fa fa-circle fa-stack-2x icon-background-default"></i> <i class="feature-icon fa '.esc_attr( $f['icon'] ).' fa-stack-1x"></i></span>';
                 }
+                else if ( $f['title'] ) {
+                    $f['icon'] = trim( $f['icon'] );
+                    $media = '<span class="fa-stack fa-5x"><i class="fa fa-circle fa-stack-2x icon-background-default"></i> <i class="feature-icon fa '.esc_attr( $f['title'] ).' fa-stack-1x"></i></span>';
+                }
 
                 ?>
                 <div class="feature-item col-lg-<?php echo esc_attr( $layout ); ?> col-sm-6 wow slideInUp">
