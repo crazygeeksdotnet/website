@@ -28,15 +28,15 @@ if ( ! empty( $boxes ) ) {
 						echo '<h2 class="section-title">' . esc_html( $title ) . '</h2>';} ?>
 					<?php if ( $desc ) {
 						echo '<div class="section-desc">' . apply_filters( 'onepress_the_content', $desc ) . '</div>';
-} ?>
-				</div>
-				<?php } ?>
+				} ?>
+			</div>
+		<?php } ?>
 				<div class="row">
 					<?php
 					$col = 3;
 					$num_col = 4;
 					$n = ( is_array( $boxes ) && ! empty( $boxes ) ) ? count( $boxes ) : 1;
-					if ( $n < 4 ) {
+					if ( $n <=3 ) {
 						switch ( $n ) {
 							case 3:
 								$col = 4;
@@ -70,6 +70,15 @@ if ( ! empty( $boxes ) ) {
 						} else {
 							$j++;
 						}
+						
+						$class = 'col-sm-4 col-md-' . $col;
+						if ( $j >= $col ) {
+							$j = 1;
+							$class .= ' clearleft';
+						} else {
+							$j++;
+						}
+
 						?>
 						<div class="<?php echo esc_attr( $class ); ?>">
 							<div class="counter_item">
