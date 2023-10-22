@@ -23,6 +23,11 @@ if ( empty( $_images ) || ! is_array( $_images ) ) {
 	$_images = array();
 }
 
+$_title = get_theme_mod( 'onepress_hero_title' );
+if ( empty( $_title ) || ! is_array( $_title ) ) {
+	$_title = array();
+}
+
 $images = array();
 
 foreach ( $_images as $m ) {
@@ -76,12 +81,12 @@ do_action( 'onepress_before_section_part', 'hero', $hook_args );
 						<div class="col-md-12 col-lg-6">
 							<?php if ( $hcl2_content ) {
 								echo '<div class="hcl2-content">' . apply_filters( 'the_content', do_shortcode( wp_kses_post( $hcl2_content ) ) ) . '</div>';
-}; ?>
+							}; ?>
 						</div>
 						<div class="col-md-12 col-lg-6">
 							<?php if ( $hcl2_image ) {
 								echo '<img class="hcl2-image" src="' . esc_url( $hcl2_image ) . '" alt="">';
-}; ?>
+							}; ?>
 						</div>
 					</div>
 				</div>
@@ -100,8 +105,13 @@ do_action( 'onepress_before_section_part', 'hero', $hook_args );
 
 				$btn_1_target = get_theme_mod( 'onepress_hcl1_btn1_target' );
 				$btn_2_target = get_theme_mod( 'onepress_hcl1_btn2_target' );
+				$btn_3_target = get_theme_mod( 'onepress_hcl1_btn3_target' );
+				$btn_4_target = get_theme_mod( 'onepress_hcl1_btn4_target' );
+
 				$target_1 = ( $btn_1_target == 1 ) ? 'target="_blank"' : '';
 				$target_2 = ( $btn_2_target == 1 ) ? 'target="_blank"' : '';
+				$target_3 = ( $btn_3_target == 1 ) ? 'target="_blank"' : '';
+				$target_4 = ( $btn_4_target == 1 ) ? 'target="_blank"' : '';
 
 				?>
 				<div class="container"<?php echo $hero_content_style; ?>>
